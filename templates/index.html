@@ -1,0 +1,50 @@
+{% extends "MyBase.html" %}
+
+
+{% block content %}
+<div class="alert alert-warning" role="alert">
+  Le but de cette app est de montrer l'utilisation conjointe de FLASK et BOOTSTRAP. 
+  A ce jour, 6 février 2019, il manque l'utilisation de WTF-Form avec Bootstrap et une bdd comme MySQL ou SQLite.
+</div>
+
+<div class="alert alert-success" role="alert">
+  Les URL existantes (non disponibles par la NAVBAR) pour ce site sont listées dans la table qui suit : 
+</div>
+
+<div style="height=10rem;" ></div>
+
+
+<div class="container" >
+	<table class="table table-dark table-hover">
+	  <thead>
+	    <tr>
+	      <th scope="col" style="width:10rem;">URL</th>
+	      <th scope="col">Objet</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>/</td>
+	      <td>Cette page.</td>
+	    </tr>
+	    <tr>
+	      <td>/createall</td>
+	      <td>Créer toutes les tables de la base de données.</td>
+	    </tr>
+	    <tr>
+	      <td>/showallcmdline</td>
+	      <td>Montrer toutes les lignes de commande.</td>
+	    </tr>
+	    <tr>
+	      <td>/destroytables</td>
+	      <td>Détruire toutes les tables de la db.</td>
+	    </tr>
+	    
+	    <tr>
+	      <td>/...</td>
+	      <td>...</td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>      
+{% endblock content %}
